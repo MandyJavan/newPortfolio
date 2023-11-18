@@ -124,9 +124,13 @@ section {
     font-weight: 400;
     width: 620px;
     max-width: 100%;
-    color: var(--rest-colors);
+    color: #ffffff;
     line-height: 30px;
     margin-bottom: 15px;
+    text-shadow: 2px 2px 2px #000000;
+    background: rgba(70, 145, 107, 0.4);
+    padding: 5px 10px;
+    border-radius: 8px;
 }
 
 .social {
@@ -189,21 +193,22 @@ header.sticky {
     padding: 16px 16%;
 }
 
+
 .about {
     background: var(--second-bg-color);
-    display: grid;
-    grid-template-columns: repeat(2fr, 1fr);
+    display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: space-between;
+
 }
 
 .about-img img{
     width: 100%;
-    height: 530px;
-    max-width: 530px;
-    border-radius: 50%;
+    height: 450px;
+    max-width: 450px;
+    border-radius: 5%;
     object-fit: cover;
-    border: 7px solid var(--main-color);
+    border: 3px solid var(--main-color);
     box-shadow: 0 0 20px var(--main-color);
 }
 
@@ -252,22 +257,6 @@ header.sticky {
     max-height: 100%;
 }
 
-/*For test services is added!*/
-/* .services {
-    display: flex;
-} */
-
-/* .box {
-    max-width: 500px;
-    display: inline-block;
-    padding: 80px 40px 66px;
-    background: #2d343f;
-    border-radius: 28px;
-    border: 1px solid transparent;
-    box-shadow: 0 0 5px var(--main-color);
-    cursor: pointer;
-    transition: all 0.5s ease;
-} */
 .box {
     padding: 80px 40px 66px;
     background: #2d343f;
@@ -503,6 +492,14 @@ form .send-btn:hover {
 }
 
 @media (max-width: 1290px) {
+    .about {
+        background: var(--second-bg-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
     .box {
         padding: 40px 40px 46px;
     }
